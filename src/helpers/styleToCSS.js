@@ -1,8 +1,8 @@
 /* @flow */
 
-import {isUnitlessNumber} from 'react-dom/lib/CSSProperty';
+import { isUnitlessNumber } from 'react-dom/lib/CSSProperty';
 
-type StyleDescr = {[key: string]: number | string};
+type StyleDescr = { [key: string]: number | string };
 
 const VENDOR_PREFIX = /^(moz|ms|o|webkit)-/;
 const NUMERIC_STRING = /^\d+$/;
@@ -33,11 +33,13 @@ function processStyleValue(name: string, value: number | string): string {
 }
 
 function styleToCSS(styleDescr: StyleDescr): string {
-  return Object.keys(styleDescr).map((name) => {
-    let styleValue = processStyleValue(name, styleDescr[name]);
-    let styleName = processStyleName(name);
-    return `${styleName}: ${styleValue}`;
-  }).join('; ');
+  return Object.keys(styleDescr)
+    .map(name => {
+      let styleValue = processStyleValue(name, styleDescr[name]);
+      let styleName = processStyleName(name);
+      return `${styleName}: ${styleValue}`;
+    })
+    .join('; ');
 }
 
 export default styleToCSS;

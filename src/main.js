@@ -1,1 +1,1 @@
-export {default as stateToHTML} from './stateToHTML';
+export { default as stateToHTML } from './stateToHTML';
