@@ -1,7 +1,7 @@
 {
   "name": "draft-js-export-html",
-  "version": "0.5.3",
-  "description": "DraftJS: Export ContentState to HTML",
+  "version": "0.1.0",
+  "description": "DraftJS: Export ContentState",
   "main": "lib/main.js",
   "typings": "typings/index.d.ts",
   "scripts": {
@@ -14,43 +14,43 @@
     "watch": "npm run build -- --watch"
   },
   "dependencies": {
-    "draft-js-utils": "^0.1.5"
+    "draft-js": "0.10.1",
+    "draft-js-utils": "0.1.7",
+    "immutable": "3.8.1"
   },
-  "peerDependencies": {
-    "draft-js": ">=0.7.0",
-    "immutable": "3.x.x"
-  },
+  "peerDependencies": {},
   "devDependencies": {
-    "@types/draft-js": "^0.7.33",
-    "babel-cli": "^6.10.1",
-    "babel-core": "^6.9.1",
-    "babel-eslint": "^7.0.0",
-    "babel-plugin-transform-class-properties": "^6.9.1",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-2": "^6.5.0",
-    "eslint": "^3.7.1",
-    "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-flow-vars": "^0.5.0",
-    "eslint-plugin-react": "^6.3.0",
-    "expect": "^1.20.1",
-    "flow-bin": "^0.32.0",
-    "mocha": "^3.1.0",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "@types/draft-js": "0.10.3",
+    "babel-cli": "6.10.1",
+    "babel-core": "6.9.1",
+    "babel-eslint": "7.0.0",
+    "babel-plugin-transform-class-properties": "6.9.1",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-2": "6.5.0",
+    "eslint": "3.7.1",
+    "eslint-plugin-babel": "3.2.0",
+    "eslint-plugin-flow-vars": "0.5.0",
+    "eslint-plugin-react": "6.3.0",
+    "expect": "1.20.1",
+    "flow-bin": "0.32.0",
+    "mocha": "3.1.0",
+    "react": "15.5.4",
+    "react-dom": "15.5.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sstur/draft-js-export-html.git"
+    "url": "git+ssh://git@github.com/robgietema/draft-js-export.git"
   },
   "keywords": [
     "draft-js",
-    "export-html"
+    "export-html",
+    "export-rtf"
   ],
-  "author": "sstur@me.com",
+  "author": "rob.gietema@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sstur/draft-js-export-html/issues"
+    "url": "https://github.com/robgietema/draft-js-export/issues"
   },
-  "homepage": "https://github.com/sstur/draft-js-export-html#readme"
+  "homepage": "https://github.com/robgietema/draft-js-export#readme"
 }
