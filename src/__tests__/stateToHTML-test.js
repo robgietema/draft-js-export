@@ -2,7 +2,7 @@
 const { describe, it } = global;
 import expect from 'expect';
 import { convertFromRaw } from 'draft-js';
-import stateToHTML from '../stateToHTML';
+import { stateToHTML } from '../main';
 import fs from 'fs';
 import { join } from 'path';
 
